@@ -19,7 +19,6 @@ for i in range(0,1000):
 		if palindromeCheck(num) == True and int(num) > int(largestPal):
 			largestPal = num
 
-
 print largestPal
 
 
