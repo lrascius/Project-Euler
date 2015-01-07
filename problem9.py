@@ -8,8 +8,6 @@
 #
 #			  There exists exactly one Pythagorean triplet for which a + b + c = 1000.
 # 			  Find the product abc.
-import math 
-
 
 for a in range(0,1000):
 	for b in range(0,1000):
