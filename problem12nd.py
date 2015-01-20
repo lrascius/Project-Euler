@@ -13,3 +13,26 @@
 # 							28: 1,2,4,7,14,28
 # 			  We can see that 28 is the first triangle number to have over five divisors.
 # 			  What is the value of the first triangle number to have over five hundred divisors?
+
+
+# for i in range(2,10):
+# 	for j in range(1,i):
+# 		triangular_num+=j
+# 	print triangular_num
+# 	triangular_num = 0
+
+def numtrianglarDivisors(num):
+	triangular_num = 0
+	count = 0
+	index = 0
+	while True:
+		index += 1
+		triangular_num += index
+		count = 0
+		for j in range(1,triangular_num+1):
+			if(triangular_num % j == 0):
+				count += 1
+				if(count >= num):
+					return triangular_num
+
+print numtrianglarDivisors(501)
